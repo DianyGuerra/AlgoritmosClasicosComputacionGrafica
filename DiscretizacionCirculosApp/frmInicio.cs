@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscretizacionCirculosApp.Relleno;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,6 +56,13 @@ namespace DiscretizacionCirculosApp
         private void algoritmoBresenhamToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmAlgoritmoBresenhamCirculos frm = new frmAlgoritmoBresenhamCirculos();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void floodFillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFloodFill frm = new frmFloodFill();
             frm.MdiParent = this;
             frm.Show();
         }

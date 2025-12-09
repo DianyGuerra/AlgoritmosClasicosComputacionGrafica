@@ -38,6 +38,7 @@
             this.algoritmoDDAParCirculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmoBresenhamToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmosDeRellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.floodFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,9 +119,18 @@
             // 
             // algoritmosDeRellenoToolStripMenuItem
             // 
+            this.algoritmosDeRellenoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.floodFillToolStripMenuItem});
             this.algoritmosDeRellenoToolStripMenuItem.Name = "algoritmosDeRellenoToolStripMenuItem";
             this.algoritmosDeRellenoToolStripMenuItem.Size = new System.Drawing.Size(150, 21);
             this.algoritmosDeRellenoToolStripMenuItem.Text = "Algoritmos de Relleno";
+            // 
+            // floodFillToolStripMenuItem
+            // 
+            this.floodFillToolStripMenuItem.Name = "floodFillToolStripMenuItem";
+            this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.floodFillToolStripMenuItem.Text = "Flood Fill";
+            this.floodFillToolStripMenuItem.Click += new System.EventHandler(this.floodFillToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -154,6 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem algoritmoDDAParCirculosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algoritmoBresenhamToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem algoritmosDeRellenoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem floodFillToolStripMenuItem;
     }
 }
 
