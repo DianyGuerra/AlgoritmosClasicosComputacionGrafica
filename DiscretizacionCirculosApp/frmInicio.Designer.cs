@@ -40,6 +40,7 @@
             this.algoritmosDeRellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.floodFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scanLineFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +123,8 @@
             // 
             this.algoritmosDeRellenoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.floodFillToolStripMenuItem,
-            this.bToolStripMenuItem});
+            this.bToolStripMenuItem,
+            this.scanLineFillToolStripMenuItem});
             this.algoritmosDeRellenoToolStripMenuItem.Name = "algoritmosDeRellenoToolStripMenuItem";
             this.algoritmosDeRellenoToolStripMenuItem.Size = new System.Drawing.Size(150, 21);
             this.algoritmosDeRellenoToolStripMenuItem.Text = "Algoritmos de Relleno";
@@ -140,6 +142,13 @@
             this.bToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
             this.bToolStripMenuItem.Text = "Boundary Fill";
             this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
+            // 
+            // scanLineFillToolStripMenuItem
+            // 
+            this.scanLineFillToolStripMenuItem.Name = "scanLineFillToolStripMenuItem";
+            this.scanLineFillToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.scanLineFillToolStripMenuItem.Text = "ScanLine Fill";
+            this.scanLineFillToolStripMenuItem.Click += new System.EventHandler(this.scanLineFillToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -175,6 +184,7 @@
         private System.Windows.Forms.ToolStripMenuItem algoritmosDeRellenoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem floodFillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scanLineFillToolStripMenuItem;
     }
 }
 

@@ -121,34 +121,20 @@
     <value>17, 17</value>
   </metadata>
   <data name="label2.Text" xml:space="preserve">
-    <value>1. Dibuje la figura:
-Mantenga presionado el botón izquierdo del mouse
-sobre el área de dibujo para trazar la forma que
-desea rellenar. Asegúrese de que la figura quede
-completamente cerrada para evitar fugas de color.
+    <value>1. Dibuje un polígono con el botón 
+"Generar Polígono"
 
-2. Seleccione un color de relleno:
-Presione el botón "Escoger Color" y elija el color
-con el que desea rellenar el interior de la figura.
+2. Seleccione un color de relleno.
 
-3. Marque el punto semilla:
-Después de terminar el dibujo, haga clic una sola
-vez dentro de la figura.
-Ese punto será donde comenzará el proceso de 
-rellenado.
+3. Presione el botón "Rellenar con 
+Scanline".
 
-4. Rellene la figura:
-Presione el botón "Rellenar Figura" para aplicar
-el algoritmo Flood Fill.
-La figura se rellenará completamente desde el
-punto semilla hasta el borde.
+4. El algoritmo rellenará automáticamente 
+el interior de la figura.
 
-5. Limpiar dibujo:
-Si desea comenzar nuevamente, presione el
-botón "Limpiar" para borrar el lienzo y 
-reiniciar el formulario.</value>
+5. Presione Limpiar para comenzar de nuevo.</value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timerAnim.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>149, 17</value>
   </metadata>
 </root>

@@ -73,5 +73,12 @@ namespace DiscretizacionCirculosApp
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void scanLineFillToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmScanlineFill frm = new frmScanlineFill();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

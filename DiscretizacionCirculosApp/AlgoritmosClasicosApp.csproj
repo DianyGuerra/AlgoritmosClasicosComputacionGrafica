@@ -102,6 +102,12 @@
     <Compile Include="Relleno\frmFloodFill.Designer.cs">
       <DependentUpon>frmFloodFill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Relleno\frmScanlineFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relleno\frmScanlineFill.Designer.cs">
+      <DependentUpon>frmScanlineFill.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Relleno\frmFloodFill.resx">
       <DependentUpon>frmFloodFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relleno\frmScanlineFill.resx">
+      <DependentUpon>frmScanlineFill.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
