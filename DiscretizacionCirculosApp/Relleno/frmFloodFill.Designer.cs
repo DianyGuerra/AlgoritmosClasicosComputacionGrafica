@@ -35,8 +35,9 @@
             this.btnClean = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,16 +93,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(960, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 29);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Instrucciones de uso";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -111,13 +102,34 @@
             this.label2.TabIndex = 21;
             this.label2.Text = resources.GetString("label2.Text");
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(960, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(231, 29);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Algoritmo Flood Fill";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(956, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 22);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Instrucciones de uso";
+            // 
             // frmFloodFill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1273, 819);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnFoodFill);
@@ -139,7 +151,8 @@
         private System.Windows.Forms.Button btnClean;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }

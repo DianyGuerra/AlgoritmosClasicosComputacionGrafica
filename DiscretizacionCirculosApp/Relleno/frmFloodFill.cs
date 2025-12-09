@@ -145,5 +145,7 @@ namespace DiscretizacionCirculosApp.Relleno
         {
             this.Close();
         }
+
+
     }
 }

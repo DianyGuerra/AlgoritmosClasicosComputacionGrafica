@@ -66,5 +66,12 @@ namespace DiscretizacionCirculosApp
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void bToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBoundaryFill frm = new frmBoundaryFill();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.algoritmoBresenhamToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmosDeRellenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.floodFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,7 +121,8 @@
             // algoritmosDeRellenoToolStripMenuItem
             // 
             this.algoritmosDeRellenoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.floodFillToolStripMenuItem});
+            this.floodFillToolStripMenuItem,
+            this.bToolStripMenuItem});
             this.algoritmosDeRellenoToolStripMenuItem.Name = "algoritmosDeRellenoToolStripMenuItem";
             this.algoritmosDeRellenoToolStripMenuItem.Size = new System.Drawing.Size(150, 21);
             this.algoritmosDeRellenoToolStripMenuItem.Text = "Algoritmos de Relleno";
@@ -131,6 +133,13 @@
             this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
             this.floodFillToolStripMenuItem.Text = "Flood Fill";
             this.floodFillToolStripMenuItem.Click += new System.EventHandler(this.floodFillToolStripMenuItem_Click);
+            // 
+            // bToolStripMenuItem
+            // 
+            this.bToolStripMenuItem.Name = "bToolStripMenuItem";
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.bToolStripMenuItem.Text = "Boundary Fill";
+            this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -165,6 +174,7 @@
         private System.Windows.Forms.ToolStripMenuItem algoritmoBresenhamToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem algoritmosDeRellenoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem floodFillToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
     }
 }
 
