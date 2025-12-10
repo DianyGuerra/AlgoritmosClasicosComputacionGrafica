@@ -36,6 +36,7 @@
             this.Instrucciones = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(720, 99);
+            this.btnClean.Location = new System.Drawing.Point(762, 30);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(137, 40);
             this.btnClean.TabIndex = 2;
@@ -62,7 +63,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(720, 145);
+            this.btnClose.Location = new System.Drawing.Point(762, 85);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(137, 40);
             this.btnClose.TabIndex = 3;
@@ -107,11 +108,20 @@
             this.label3.TabIndex = 7;
             this.label3.Text = resources.GetString("label3.Text");
             // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(759, 158);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(0, 13);
+            this.lblInfo.TabIndex = 8;
+            // 
             // frmCohenSutherland
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 943);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Instrucciones);
@@ -136,5 +146,6 @@
         private System.Windows.Forms.Label Instrucciones;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblInfo;
     }
 }

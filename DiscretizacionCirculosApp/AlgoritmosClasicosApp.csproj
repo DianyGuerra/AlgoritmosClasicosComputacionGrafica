@@ -90,16 +90,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recorte lineas\frmCohenSutherland.cs">
+    <Compile Include="RecorteLineas\frmCohenSutherland.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recorte lineas\frmCohenSutherland.Designer.cs">
+    <Compile Include="RecorteLineas\frmCohenSutherland.Designer.cs">
       <DependentUpon>frmCohenSutherland.cs</DependentUpon>
     </Compile>
-    <Compile Include="Recorte lineas\frmLiangBarsky.cs">
+    <Compile Include="RecorteLineas\frmLiangBarsky.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recorte lineas\frmLiangBarsky.Designer.cs">
+    <Compile Include="RecorteLineas\frmLiangBarsky.Designer.cs">
       <DependentUpon>frmLiangBarsky.cs</DependentUpon>
     </Compile>
     <Compile Include="Relleno\frmBoundaryFill.cs">
@@ -150,8 +150,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Recorte lineas\frmCohenSutherland.resx">
+    <EmbeddedResource Include="RecorteLineas\frmCohenSutherland.resx">
       <DependentUpon>frmCohenSutherland.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecorteLineas\frmLiangBarsky.resx">
+      <DependentUpon>frmLiangBarsky.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relleno\frmBoundaryFill.resx">
       <DependentUpon>frmBoundaryFill.cs</DependentUpon>

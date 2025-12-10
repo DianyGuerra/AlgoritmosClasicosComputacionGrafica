@@ -82,6 +82,15 @@ namespace DiscretizacionCirculosApp.Relleno
             return code;
         }
 
+
+        string OutCodeToBits(OutCode code)
+        {
+            // convierte el enum a int y luego a binario de 4 bits
+            int valor = (int)code;
+            return Convert.ToString(valor, 2).PadLeft(4, '0');
+        }
+
+
         // ================== ALGORITMO COHEN–SUTHERLAND ==================
         bool RecorteCohenSutherland(ref PointF p0, ref PointF p1)
         {
@@ -166,28 +175,37 @@ namespace DiscretizacionCirculosApp.Relleno
 
             pFin = e.Location;
 
-
-            // 2) Dibujar línea completa en ROJO
+            // Dibuja la línea completa en rojo
             using (Graphics g = Graphics.FromImage(lienzo))
             using (Pen penCompleta = new Pen(Color.Red, 2))
             {
                 g.DrawLine(penCompleta, pInicio, pFin);
 
-                // 3) Aplicar Cohen–Sutherland y dibujar tramo visible en AZUL
-                PointF p0 = pInicio;
-                PointF p1 = pFin;
+                // Calcula códigos de región de los extremos ORIGINALES
+                OutCode c0 = ComputeOutCode(pInicio.X, pInicio.Y);
+                OutCode c1 = ComputeOutCode(pFin.X, pFin.Y);
 
-                if (RecorteCohenSutherland(ref p0, ref p1))
+                // Muestra los códigos en el label
+                string bits0 = OutCodeToBits(c0);
+                string bits1 = OutCodeToBits(c1);
+                lblInfo.Text = $"Cohen-Sutherland\nP0: {bits0}\nP1: {bits1}";
+
+                // Ahora aplica el recorte
+                PointF q0 = pInicio;
+                PointF q1 = pFin;
+
+                if (RecorteCohenSutherland(ref q0, ref q1))
                 {
                     using (Pen penVisible = new Pen(Color.Blue, 3))
                     {
-                        g.DrawLine(penVisible, p0, p1);
+                        g.DrawLine(penVisible, q0, q1);
                     }
                 }
             }
 
             picCanvas.Invalidate();
         }
+
 
         // ================== BOTÓN: LIMPIAR ==================
         private void btnClean_Click(object sender, EventArgs e)

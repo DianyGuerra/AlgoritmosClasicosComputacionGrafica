@@ -90,7 +90,9 @@ namespace DiscretizacionCirculosApp
 
         private void algoritmoLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmLiangBarsky frm = new frmLiangBarsky();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }
