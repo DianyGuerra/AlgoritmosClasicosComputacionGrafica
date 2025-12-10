@@ -80,5 +80,17 @@ namespace DiscretizacionCirculosApp
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void algoritmoCohenSutherlandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCohenSutherland frm = new frmCohenSutherland();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void algoritmoLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

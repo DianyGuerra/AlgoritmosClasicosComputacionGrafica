@@ -41,6 +41,9 @@
             this.floodFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scanLineFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recorteDeLíneasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.algoritmoCohenSutherlandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.algoritmoLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +53,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lineasToolStripMenuItem,
             this.círculoToolStripMenuItem,
-            this.algoritmosDeRellenoToolStripMenuItem});
+            this.algoritmosDeRellenoToolStripMenuItem,
+            this.recorteDeLíneasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -132,23 +136,46 @@
             // floodFillToolStripMenuItem
             // 
             this.floodFillToolStripMenuItem.Name = "floodFillToolStripMenuItem";
-            this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.floodFillToolStripMenuItem.Text = "Flood Fill";
             this.floodFillToolStripMenuItem.Click += new System.EventHandler(this.floodFillToolStripMenuItem_Click);
             // 
             // bToolStripMenuItem
             // 
             this.bToolStripMenuItem.Name = "bToolStripMenuItem";
-            this.bToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.bToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.bToolStripMenuItem.Text = "Boundary Fill";
             this.bToolStripMenuItem.Click += new System.EventHandler(this.bToolStripMenuItem_Click);
             // 
             // scanLineFillToolStripMenuItem
             // 
             this.scanLineFillToolStripMenuItem.Name = "scanLineFillToolStripMenuItem";
-            this.scanLineFillToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.scanLineFillToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.scanLineFillToolStripMenuItem.Text = "ScanLine Fill";
             this.scanLineFillToolStripMenuItem.Click += new System.EventHandler(this.scanLineFillToolStripMenuItem_Click);
+            // 
+            // recorteDeLíneasToolStripMenuItem
+            // 
+            this.recorteDeLíneasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.algoritmoCohenSutherlandToolStripMenuItem,
+            this.algoritmoLToolStripMenuItem});
+            this.recorteDeLíneasToolStripMenuItem.Name = "recorteDeLíneasToolStripMenuItem";
+            this.recorteDeLíneasToolStripMenuItem.Size = new System.Drawing.Size(124, 21);
+            this.recorteDeLíneasToolStripMenuItem.Text = "Recorte de Líneas";
+            // 
+            // algoritmoCohenSutherlandToolStripMenuItem
+            // 
+            this.algoritmoCohenSutherlandToolStripMenuItem.Name = "algoritmoCohenSutherlandToolStripMenuItem";
+            this.algoritmoCohenSutherlandToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
+            this.algoritmoCohenSutherlandToolStripMenuItem.Text = "Algoritmo Cohen - Sutherland";
+            this.algoritmoCohenSutherlandToolStripMenuItem.Click += new System.EventHandler(this.algoritmoCohenSutherlandToolStripMenuItem_Click);
+            // 
+            // algoritmoLToolStripMenuItem
+            // 
+            this.algoritmoLToolStripMenuItem.Name = "algoritmoLToolStripMenuItem";
+            this.algoritmoLToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
+            this.algoritmoLToolStripMenuItem.Text = "Algoritmo Liang - Barsky";
+            this.algoritmoLToolStripMenuItem.Click += new System.EventHandler(this.algoritmoLToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -185,6 +212,9 @@
         private System.Windows.Forms.ToolStripMenuItem floodFillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scanLineFillToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recorteDeLíneasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem algoritmoCohenSutherlandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem algoritmoLToolStripMenuItem;
     }
 }
 
