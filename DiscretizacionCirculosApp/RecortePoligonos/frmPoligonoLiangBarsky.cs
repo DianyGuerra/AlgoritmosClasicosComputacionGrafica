@@ -26,6 +26,7 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
         // ---------------------------------------------------------
         void InicializarLienzoYVentana()
         {
+            // Crear bitmap en blanco
             lienzo = new Bitmap(picCanvas.Width, picCanvas.Height);
             using (Graphics g = Graphics.FromImage(lienzo))
             {
@@ -33,12 +34,16 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
             }
             picCanvas.Image = lienzo;
 
-            int margen = 80;
+            // Ventana centrada con márgenes simétricos
+            int margenX = 80;   // izquierda/derecha
+            int margenY = 60;   // arriba/abajo
+
             ventanaRecorte = new Rectangle(
-                margen,
-                margen + 40,
-                picCanvas.Width - 2 * margen,
-                picCanvas.Height - 2 * margen);
+                margenX,
+                margenY,
+                picCanvas.Width - 2 * margenX,
+                picCanvas.Height - 2 * margenY
+            );
 
             RedibujarTodo();
         }
@@ -50,12 +55,13 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
             {
                 g.Clear(Color.White);
 
-                // Fondo verde de ventana
+                // Fondo verde de la ventana
                 using (Brush b = new SolidBrush(Color.FromArgb(220, 240, 255, 200)))
                 {
                     g.FillRectangle(b, ventanaRecorte);
                 }
-                // Borde de ventana
+
+                // Borde de la ventana
                 using (Pen borde = new Pen(Color.DarkGreen, 2))
                 {
                     g.DrawRectangle(borde, ventanaRecorte);
@@ -114,7 +120,6 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
             t0 = 0f;
             t1 = 1f;
 
-            // Función auxiliar del algoritmo
             bool ClipTest(float p, float q, ref float t0Ref, ref float t1Ref)
             {
                 if (p == 0)
@@ -127,7 +132,7 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
 
                 if (p < 0)
                 {
-                    // posible entrada
+                    // Posible entrada
                     if (r > t1Ref) return false;
                     if (r > t0Ref) t0Ref = r;
                 }
@@ -166,7 +171,7 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
         // ---------------------------------------------------------
         private void btnClip_Click(object sender, EventArgs e)
         {
-            if (vertices.Count < 2)
+            if (vertices.Count < 3)
             {
                 MessageBox.Show("Dibuje al menos 3 puntos para formar un polígono.");
                 return;
