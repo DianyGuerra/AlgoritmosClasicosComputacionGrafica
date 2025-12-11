@@ -1,4 +1,6 @@
-﻿using DiscretizacionCirculosApp.Relleno;
+﻿using DiscretizacionCirculosApp.RecorteLineas;
+using DiscretizacionCirculosApp.RecortePoligonos;
+using DiscretizacionCirculosApp.Relleno;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -91,6 +93,34 @@ namespace DiscretizacionCirculosApp
         private void algoritmoLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmLiangBarsky frm = new frmLiangBarsky();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void algoritmoCyrusBeckToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMidpointClip frm = new frmMidpointClip();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void sutherlandHodgmanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSutherlandHodgman frm = new frmSutherlandHodgman();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void weilerAthertonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecortePoligonoSegmentos frm = new frmRecortePoligonoSegmentos();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecortePoligonoSegmentos frm = new frmRecortePoligonoSegmentos();
             frm.MdiParent = this;
             frm.Show();
         }

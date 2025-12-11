@@ -96,11 +96,29 @@
     <Compile Include="RecorteLineas\frmCohenSutherland.Designer.cs">
       <DependentUpon>frmCohenSutherland.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecorteLineas\frmMidpointClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecorteLineas\frmMidpointClip.Designer.cs">
+      <DependentUpon>frmMidpointClip.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecorteLineas\frmLiangBarsky.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RecorteLineas\frmLiangBarsky.Designer.cs">
       <DependentUpon>frmLiangBarsky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecortePoligonos\frmSutherlandHodgman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecortePoligonos\frmSutherlandHodgman.Designer.cs">
+      <DependentUpon>frmSutherlandHodgman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentos.Designer.cs">
+      <DependentUpon>frmRecortePoligonoSegmentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Relleno\frmBoundaryFill.cs">
       <SubType>Form</SubType>
@@ -156,6 +174,15 @@
     <EmbeddedResource Include="RecorteLineas\frmLiangBarsky.resx">
       <DependentUpon>frmLiangBarsky.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RecorteLineas\frmMidpointClip.resx">
+      <DependentUpon>frmMidpointClip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecortePoligonos\frmSutherlandHodgman.resx">
+      <DependentUpon>frmSutherlandHodgman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecortePoligonos\frmRecortePoligonoSegmentos.resx">
+      <DependentUpon>frmRecortePoligonoSegmentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Relleno\frmBoundaryFill.resx">
       <DependentUpon>frmBoundaryFill.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,5 +205,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

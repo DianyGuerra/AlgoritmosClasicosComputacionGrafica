@@ -147,7 +147,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmScanlineFill";
-            this.Text = "frmScanlineFill";
+            this.Text = "Algoritmo de relleno ScanLine Fill";
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

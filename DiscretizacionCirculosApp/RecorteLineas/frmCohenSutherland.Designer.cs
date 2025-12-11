@@ -130,7 +130,7 @@
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.picCanvas);
             this.Name = "frmCohenSutherland";
-            this.Text = "frmCohenSutherland";
+            this.Text = "Recorte de líneas de Cohen Sutherland";
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

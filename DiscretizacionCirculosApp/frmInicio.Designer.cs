@@ -44,6 +44,10 @@
             this.recorteDeLíneasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmoCohenSutherlandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algoritmoLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.algoritmoCyrusBeckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recorteDePolígonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sutherlandHodgmanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +58,8 @@
             this.lineasToolStripMenuItem,
             this.círculoToolStripMenuItem,
             this.algoritmosDeRellenoToolStripMenuItem,
-            this.recorteDeLíneasToolStripMenuItem});
+            this.recorteDeLíneasToolStripMenuItem,
+            this.recorteDePolígonosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -158,7 +163,8 @@
             // 
             this.recorteDeLíneasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.algoritmoCohenSutherlandToolStripMenuItem,
-            this.algoritmoLToolStripMenuItem});
+            this.algoritmoLToolStripMenuItem,
+            this.algoritmoCyrusBeckToolStripMenuItem});
             this.recorteDeLíneasToolStripMenuItem.Name = "recorteDeLíneasToolStripMenuItem";
             this.recorteDeLíneasToolStripMenuItem.Size = new System.Drawing.Size(124, 21);
             this.recorteDeLíneasToolStripMenuItem.Text = "Recorte de Líneas";
@@ -176,6 +182,36 @@
             this.algoritmoLToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
             this.algoritmoLToolStripMenuItem.Text = "Algoritmo Liang - Barsky";
             this.algoritmoLToolStripMenuItem.Click += new System.EventHandler(this.algoritmoLToolStripMenuItem_Click);
+            // 
+            // algoritmoCyrusBeckToolStripMenuItem
+            // 
+            this.algoritmoCyrusBeckToolStripMenuItem.Name = "algoritmoCyrusBeckToolStripMenuItem";
+            this.algoritmoCyrusBeckToolStripMenuItem.Size = new System.Drawing.Size(256, 24);
+            this.algoritmoCyrusBeckToolStripMenuItem.Text = "Algoritmo Punto Medio";
+            this.algoritmoCyrusBeckToolStripMenuItem.Click += new System.EventHandler(this.algoritmoCyrusBeckToolStripMenuItem_Click);
+            // 
+            // recorteDePolígonosToolStripMenuItem
+            // 
+            this.recorteDePolígonosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sutherlandHodgmanToolStripMenuItem,
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem});
+            this.recorteDePolígonosToolStripMenuItem.Name = "recorteDePolígonosToolStripMenuItem";
+            this.recorteDePolígonosToolStripMenuItem.Size = new System.Drawing.Size(147, 21);
+            this.recorteDePolígonosToolStripMenuItem.Text = "Recorte de polígonos";
+            // 
+            // sutherlandHodgmanToolStripMenuItem
+            // 
+            this.sutherlandHodgmanToolStripMenuItem.Name = "sutherlandHodgmanToolStripMenuItem";
+            this.sutherlandHodgmanToolStripMenuItem.Size = new System.Drawing.Size(537, 24);
+            this.sutherlandHodgmanToolStripMenuItem.Text = "Sutherland - Hodgman";
+            this.sutherlandHodgmanToolStripMenuItem.Click += new System.EventHandler(this.sutherlandHodgmanToolStripMenuItem_Click);
+            // 
+            // algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem
+            // 
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem.Name = "algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem";
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem.Size = new System.Drawing.Size(537, 24);
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem.Text = "Algoritmo de recorte de polígonos por segmentos usando Cohen–Sutherland";
+            this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem.Click += new System.EventHandler(this.algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -215,6 +251,10 @@
         private System.Windows.Forms.ToolStripMenuItem recorteDeLíneasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algoritmoCohenSutherlandToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algoritmoLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem algoritmoCyrusBeckToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recorteDePolígonosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sutherlandHodgmanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem;
     }
 }
 
