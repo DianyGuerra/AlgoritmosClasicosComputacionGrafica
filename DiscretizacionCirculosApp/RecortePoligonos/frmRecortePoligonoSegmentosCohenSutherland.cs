@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace DiscretizacionCirculosApp.RecortePoligonos
 {
-    public partial class frmRecortePoligonoSegmentos : Form
+    public partial class frmRecortePoligonoSegmentosCohenSutherland : Form
     {
         private Bitmap lienzo;
         private Rectangle ventanaRecorte;
@@ -13,7 +13,7 @@ namespace DiscretizacionCirculosApp.RecortePoligonos
         // Polígono original (lista de vértices que el usuario marca con el mouse)
         private List<PointF> poligono = new List<PointF>();
 
-        public frmRecortePoligonoSegmentos()
+        public frmRecortePoligonoSegmentosCohenSutherland()
         {
             InitializeComponent();
 

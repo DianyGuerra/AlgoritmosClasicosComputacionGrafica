@@ -113,14 +113,21 @@ namespace DiscretizacionCirculosApp
 
         private void weilerAthertonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRecortePoligonoSegmentos frm = new frmRecortePoligonoSegmentos();
+            frmRecortePoligonoSegmentosCohenSutherland frm = new frmRecortePoligonoSegmentosCohenSutherland();
             frm.MdiParent = this;
             frm.Show();
         }
 
         private void algoritmoDeRecorteDePolígonosPorSegmentosUsandoCohenSutherlandToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRecortePoligonoSegmentos frm = new frmRecortePoligonoSegmentos();
+            frmRecortePoligonoSegmentosCohenSutherland frm = new frmRecortePoligonoSegmentosCohenSutherland();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void recorteDePolígonosPorSegmentosUsandoLiangBarskyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPoligonoLiangBarsky frm = new frmPoligonoLiangBarsky();
             frm.MdiParent = this;
             frm.Show();
         }

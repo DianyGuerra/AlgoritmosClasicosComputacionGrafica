@@ -128,22 +128,29 @@
      para ir marcando los vértices.
    - Cada clic agrega un nuevo punto del
      polígono.
+   - Cuando haya colocado todos los puntos
+     que desee, presione el botón "Recortar".
    - El programa cierra automáticamente el 
      polígono uniendo el último vértice con el 
      primero.
 
 3. Aplicar el recorte:
-   - Presione el botón "Recortar".
-   - Se mostrará en color azul el polígono 
-     recortado, es decir, la parte del
-     polígono que queda dentro de la 
-     ventana verde
-     (algoritmo Sutherland–Hodgman).
+   - Presione el botón “Recortar polígono”.
+   - El polígono original (todas sus aristas) 
+     se muestra en color rojo.
+   - Los segmentos de las aristas que
+     quedan dentro de la ventana verde se
+     muestran en color azul.
+   - El recorte se realiza por segmentos,
+     aplicando el algoritmo de 
+     Cohen–Sutherland a cada arista del
+     polígono.
 
 4. Limpiar y empezar de nuevo:
    - Presione el botón "Limpiar" para
      borrar el polígono y el resultado.
    - Después de limpiar, puede dibujar
-     un nuevo polígono y volver a recortar.</value>
+     un nuevo polígono y volver a recortar.
+</value>
   </data>
 </root>

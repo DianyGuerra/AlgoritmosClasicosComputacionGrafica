@@ -108,17 +108,23 @@
     <Compile Include="RecorteLineas\frmLiangBarsky.Designer.cs">
       <DependentUpon>frmLiangBarsky.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecortePoligonos\frmPoligonoLiangBarsky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecortePoligonos\frmPoligonoLiangBarsky.Designer.cs">
+      <DependentUpon>frmPoligonoLiangBarsky.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecortePoligonos\frmSutherlandHodgman.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RecortePoligonos\frmSutherlandHodgman.Designer.cs">
       <DependentUpon>frmSutherlandHodgman.cs</DependentUpon>
     </Compile>
-    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentos.cs">
+    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentosCohenSutherland.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentos.Designer.cs">
-      <DependentUpon>frmRecortePoligonoSegmentos.cs</DependentUpon>
+    <Compile Include="RecortePoligonos\frmRecortePoligonoSegmentosCohenSutherland.Designer.cs">
+      <DependentUpon>frmRecortePoligonoSegmentosCohenSutherland.cs</DependentUpon>
     </Compile>
     <Compile Include="Relleno\frmBoundaryFill.cs">
       <SubType>Form</SubType>
@@ -177,11 +183,14 @@
     <EmbeddedResource Include="RecorteLineas\frmMidpointClip.resx">
       <DependentUpon>frmMidpointClip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RecortePoligonos\frmPoligonoLiangBarsky.resx">
+      <DependentUpon>frmPoligonoLiangBarsky.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RecortePoligonos\frmSutherlandHodgman.resx">
       <DependentUpon>frmSutherlandHodgman.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RecortePoligonos\frmRecortePoligonoSegmentos.resx">
-      <DependentUpon>frmRecortePoligonoSegmentos.cs</DependentUpon>
+    <EmbeddedResource Include="RecortePoligonos\frmRecortePoligonoSegmentosCohenSutherland.resx">
+      <DependentUpon>frmRecortePoligonoSegmentosCohenSutherland.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relleno\frmBoundaryFill.resx">
       <DependentUpon>frmBoundaryFill.cs</DependentUpon>

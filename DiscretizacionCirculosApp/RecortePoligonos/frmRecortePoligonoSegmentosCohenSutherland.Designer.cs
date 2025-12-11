@@ -1,6 +1,6 @@
 ﻿namespace DiscretizacionCirculosApp.RecortePoligonos
 {
-    partial class frmRecortePoligonoSegmentos
+    partial class frmRecortePoligonoSegmentosCohenSutherland
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecortePoligonoSegmentos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRecortePoligonoSegmentosCohenSutherland));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Instrucciones = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(980, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 377);
+            this.label3.Size = new System.Drawing.Size(225, 429);
             this.label3.TabIndex = 20;
             this.label3.Text = resources.GetString("label3.Text");
             // 
@@ -89,7 +89,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(1022, 671);
+            this.btnClose.Location = new System.Drawing.Point(1023, 693);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(125, 47);
             this.btnClose.TabIndex = 15;
@@ -99,7 +99,7 @@
             // 
             // btnClean
             // 
-            this.btnClean.Location = new System.Drawing.Point(1022, 606);
+            this.btnClean.Location = new System.Drawing.Point(1023, 640);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(125, 47);
             this.btnClean.TabIndex = 14;
@@ -109,7 +109,7 @@
             // 
             // btnClip
             // 
-            this.btnClip.Location = new System.Drawing.Point(1022, 540);
+            this.btnClip.Location = new System.Drawing.Point(1023, 587);
             this.btnClip.Name = "btnClip";
             this.btnClip.Size = new System.Drawing.Size(125, 47);
             this.btnClip.TabIndex = 13;
@@ -122,7 +122,7 @@
             this.picCanvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCanvas.Location = new System.Drawing.Point(12, 89);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(962, 629);
+            this.picCanvas.Size = new System.Drawing.Size(962, 666);
             this.picCanvas.TabIndex = 12;
             this.picCanvas.TabStop = false;
             this.picCanvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picCanvas_MouseClick);
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 730);
+            this.ClientSize = new System.Drawing.Size(1255, 767);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Instrucciones);

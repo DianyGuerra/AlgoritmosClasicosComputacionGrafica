@@ -119,33 +119,37 @@
   </resheader>
   <data name="label3.Text" xml:space="preserve">
     <value>1. Área visible:
-   El rectángulo verde del centro representa la
-   ventana de recorte (zona visible).
-   El fondo blanco es el área no visible.
+  - El rectángulo verde del centro representa
+    la ventana de recorte (zona visible).
+  - El fondo blanco es el área no visible.
 
 2. Dibujar el polígono:
-   - Haga clic con el botón izquierdo del mouse
-     para ir marcando los vértices.
-   - Cada clic agrega un nuevo punto del
-     polígono.
-   - Cuando haya colocado todos los puntos
-     que desee, presione el botón "Recortar".
-   - El programa cierra automáticamente el 
-     polígono uniendo el último vértice con el 
-     primero.
+  - Haga clic con el botón izquierdo del mouse
+    sobre el área de dibujo para ir marcando
+    los vértices.
+  - Cada clic agrega un nuevo punto del polígono.
+  - El polígono puede tener vértices dentro o fuera
+    de la ventana verde.
+  - El polígono original se muestra en color rojo.
 
 3. Aplicar el recorte:
-   - Presione el botón "Recortar".
-   - Se mostrará en color azul el polígono 
-     recortado, es decir, la parte del
-     polígono que queda dentro de la 
-     ventana verde
-     (algoritmo Sutherland–Hodgman).
+  - Presione el botón “Recortar polígono”.
+  - El polígono original (todas sus aristas) se
+    mantiene en color rojo.
+  - Los segmentos de las aristas que quedan
+    dentro de la ventana verde se dibujan en
+    color azul.
+  - El recorte se realiza por segmentos,
+    aplicando el algoritmo de Liang–Barsky a
+    cada arista del polígono.
+  - En la parte superior se muestra cuántos
+    vértices tiene el polígono y cuántos
+    segmentos resultaron visibles.
 
 4. Limpiar y empezar de nuevo:
-   - Presione el botón "Limpiar" para
-     borrar el polígono y el resultado.
-   - Después de limpiar, puede dibujar
-     un nuevo polígono y volver a recortar.</value>
+  - Presione el botón “Limpiar” para borrar
+    el polígono y el resultado.
+  - Después de limpiar, puede dibujar un 
+    nuevo polígono y volver a recortar.</value>
   </data>
 </root>
