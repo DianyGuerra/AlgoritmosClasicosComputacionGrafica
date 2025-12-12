@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Parte de un punto inicial del círculo y usa un valor de decisión para saber si el siguiente punto se coloca a un lado o en diagonal.
+Solo calcula puntos en un octante y luego los refleja en los otros siete, obteniendo el círculo completo con operaciones enteras
+y buen rendimiento.</value>
+  </data>
 </root>

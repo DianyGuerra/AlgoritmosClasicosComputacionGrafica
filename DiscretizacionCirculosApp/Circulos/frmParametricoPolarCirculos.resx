@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Este algoritmo dibuja un círculo usando sus ecuaciones paramétricas:
+
+𝑥 = 𝑥𝑐 + 𝑟cos(𝜃) y 
+𝑦 = 𝑦𝑐 + 𝑟sin(𝜃)
+
+A partir del centro y el radio, se hace variar el ángulo 𝜃 en pequeños pasos desde 0 hasta 2π, calculando
+y dibujando los puntos resultantes sobre la malla de píxeles para formar la circunferencia.</value>
+  </data>
 </root>

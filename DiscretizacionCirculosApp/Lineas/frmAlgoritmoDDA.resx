@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>El algoritmo DDA (Digital Differential Analyzer) calcula una línea entre dos puntos generando de forma incremental los valores de x e y.
+A partir de las coordenadas inicial y final, divide el tramo en pequeños pasos y en cada paso suma un incremento constante en x y en y,
+marcando el píxel más cercano a esos valores para aproximar la línea en la rejilla de la pantalla.</value>
+  </data>
 </root>

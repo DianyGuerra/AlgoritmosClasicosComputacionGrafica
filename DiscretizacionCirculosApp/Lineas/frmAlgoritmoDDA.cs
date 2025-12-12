@@ -54,6 +54,7 @@ namespace DiscretizacionCirculosApp
             int dy = y1 - y0;
             int steps = Math.Max(Math.Abs(dx), Math.Abs(dy));
 
+            //calcular incrementos
             float xIncrement = dx / (float)steps;
             float yIncrement = dy / (float)steps;
 

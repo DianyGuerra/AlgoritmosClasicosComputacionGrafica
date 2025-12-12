@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Este algoritmo dibuja una línea usando solo operaciones enteras. A partir de los puntos inicial y final, va eligiendo en cada paso
+el píxel más cercano a la línea ideal según un error acumulado, logrando una línea rápida y precisa en la rejilla de píxeles.</value>
+  </data>
 </root>

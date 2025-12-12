@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmParametricoPolarCirculos));
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
@@ -35,14 +36,16 @@
             this.txtRadius = new System.Windows.Forms.TextBox();
             this.picCanvas = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(1133, 791);
+            this.btnCerrar.Location = new System.Drawing.Point(1188, 13);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(139, 56);
+            this.btnCerrar.Size = new System.Drawing.Size(84, 38);
             this.btnCerrar.TabIndex = 45;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -50,9 +53,9 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(1133, 390);
+            this.btnLimpiar.Location = new System.Drawing.Point(1052, 67);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(129, 44);
+            this.btnLimpiar.Size = new System.Drawing.Size(104, 27);
             this.btnLimpiar.TabIndex = 44;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -60,9 +63,9 @@
             // 
             // btnDraw
             // 
-            this.btnDraw.Location = new System.Drawing.Point(1133, 340);
+            this.btnDraw.Location = new System.Drawing.Point(1052, 29);
             this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(129, 43);
+            this.btnDraw.Size = new System.Drawing.Size(104, 30);
             this.btnDraw.TabIndex = 43;
             this.btnDraw.Text = "Dibujar";
             this.btnDraw.UseVisualStyleBackColor = true;
@@ -71,7 +74,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1130, 152);
+            this.label1.Location = new System.Drawing.Point(879, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 42;
@@ -79,34 +82,56 @@
             // 
             // txtRadius
             // 
-            this.txtRadius.Location = new System.Drawing.Point(1139, 187);
+            this.txtRadius.Location = new System.Drawing.Point(888, 64);
             this.txtRadius.Name = "txtRadius";
             this.txtRadius.Size = new System.Drawing.Size(100, 20);
             this.txtRadius.TabIndex = 41;
             // 
             // picCanvas
             // 
-            this.picCanvas.Location = new System.Drawing.Point(11, 9);
+            this.picCanvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCanvas.Location = new System.Drawing.Point(12, 174);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(1107, 838);
+            this.picCanvas.Size = new System.Drawing.Size(1260, 768);
             this.picCanvas.TabIndex = 40;
             this.picCanvas.TabStop = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1139, 236);
+            this.checkBox1.Location = new System.Drawing.Point(888, 113);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(107, 17);
             this.checkBox1.TabIndex = 46;
             this.checkBox1.Text = "¿Aplicar escala ?";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // frmDDACirculos
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(14, 64);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(502, 91);
+            this.label8.TabIndex = 52;
+            this.label8.Text = resources.GetString("label8.Text");
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(768, 29);
+            this.label7.TabIndex = 51;
+            this.label7.Text = "Algoritmo Paramétrico Polar del Círculo - Discretización de círculos";
+            // 
+            // frmParametricoPolarCirculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 859);
+            this.ClientSize = new System.Drawing.Size(1284, 954);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
@@ -114,7 +139,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRadius);
             this.Controls.Add(this.picCanvas);
-            this.Name = "frmDDACirculos";
+            this.Name = "frmParametricoPolarCirculos";
             this.Text = "Algoritmo Paramétrico del Círculo";
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
@@ -131,5 +156,7 @@
         private System.Windows.Forms.TextBox txtRadius;
         private System.Windows.Forms.PictureBox picCanvas;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }

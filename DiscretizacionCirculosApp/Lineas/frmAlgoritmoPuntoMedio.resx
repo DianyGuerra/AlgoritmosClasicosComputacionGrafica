@@ -117,4 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Este algoritmo decide qué píxel dibujar evaluando la ecuación de la línea en el punto medio entre dos posibles píxeles vecinos.
+Según el signo de esa evaluación, avanza en dirección horizontal o diagonal, aproximando la línea sobre la malla de píxeles.</value>
+  </data>
 </root>

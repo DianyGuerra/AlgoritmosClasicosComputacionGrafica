@@ -12,6 +12,7 @@ namespace DiscretizacionCirculosApp.RecorteLineas
 
         bool dibujandoLinea = false;
         Point pInicio, pFin;
+        const int MAX_DEPTH = 18;
         int maxDepthUsada = 0;
 
 
@@ -88,12 +89,9 @@ namespace DiscretizacionCirculosApp.RecorteLineas
         // Recorte por subdivisión de punto medio
         void RecortePuntoMedio(PointF a, PointF b, List<Tuple<PointF, PointF>> visibles, int depth)
         {
-            // Límite de recursión por seguridad
+            // Solo para estadística (no corta la recursión)
             if (depth > maxDepthUsada)
-            {
                 maxDepthUsada = depth;
-                return;
-            }
 
             bool insideA = PuntoDentro(a);
             bool insideB = PuntoDentro(b);
@@ -109,15 +107,37 @@ namespace DiscretizacionCirculosApp.RecorteLineas
             if (SegmentoFueraBBox(a, b))
                 return;
 
-            // 3. Segmento muy pequeño → parar
-            if (Distancia(a, b) < 1.0f)
-                return;
+            // 3. Hemos subdividido "suficiente" o el segmento es muy pequeño:
+            //    aproximamos el corte en lugar de seguir partiendo.
+            if (depth >= MAX_DEPTH || Distancia(a, b) < 1.0f)
+            {
+                // Si al menos una parte está dentro, aproximamos
+                if (insideA || insideB)
+                {
+                    PointF aClamp = ClampToWindow(a);
+                    PointF bClamp = ClampToWindow(b);
 
-            // 4. Subdividimos en el punto medio y seguimos
+                    // Si después de ajustar ambos quedan dentro, lo consideramos visible
+                    if (PuntoDentro(aClamp) && PuntoDentro(bClamp))
+                        visibles.Add(Tuple.Create(aClamp, bClamp));
+                }
+                return;
+            }
+
+            // 4. Subdividimos en el punto medio y seguimos recursivamente
             PointF m = new PointF((a.X + b.X) / 2f, (a.Y + b.Y) / 2f);
 
             RecortePuntoMedio(a, m, visibles, depth + 1);
             RecortePuntoMedio(m, b, visibles, depth + 1);
+        }
+
+        PointF ClampToWindow(PointF p)
+        {
+            float x = Math.Max(ventanaRecorte.Left,
+                     Math.Min(ventanaRecorte.Right, p.X));
+            float y = Math.Max(ventanaRecorte.Top,
+                     Math.Min(ventanaRecorte.Bottom, p.Y));
+            return new PointF(x, y);
         }
 
         // ===================== EVENTOS DEL PICCANVAS ======================

@@ -230,7 +230,6 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimizeBox = false;
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Algoritmos clásicos de Computación Gráfica";

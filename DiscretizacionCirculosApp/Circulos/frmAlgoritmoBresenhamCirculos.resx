@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Genera los puntos de un círculo usando un criterio de decisión entero. Comienza en un punto del borde y, en cada paso,
+decide si el siguiente punto se mueve lateral o diagonalmente, aprovechando la simetría de 8 octantes para dibujar todo
+el círculo de forma eficiente.</value>
+  </data>
 </root>
