@@ -55,7 +55,7 @@ namespace DiscretizacionCirculosApp
                 else 
                 { 
                     y = y - 1;
-                    p = p + 2*(x-y) + 5;
+                    p = p + 2*(x-y) + 1;
                 }
                 PlotPoint(g, brush, cx, cy, x, y);
             }
